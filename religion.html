@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Holy Breakfast Bowl Cult</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fdebd0;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      text-align: center;
+      background-color: #fff8e7;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+    }
+    .title {
+      font-size: 50px;
+      color: #ff4500;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .god-bowl {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #ff6347;
+    }
+    .description {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 25px;
+      border: 5px solid #ff6347;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff4500;
+    }
+    .scripture {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="title">THE ULTIMATE BOWL GOD</div>
+    
+    <div class="god-bowl">Behold the Divine Bowl of Breakfast!</div>
+    <img src="bowl.webp" alt="Divine Breakfast Bowl">
+    
+    <div class="description">
+      Let us worship this holy, holy bowl of breakfast that hovers in all its oat-filled glory! 
+      This is no regular bowl — this is <strong>THE</strong> bowl. It holds not just food, but the very secrets of the universe. 
+      The milk pours from the heavens, and the oats are blessed with cosmic energy. Every spoonful is a prayer to the Great Cereal God, 
+      and every bite brings you one step closer to breakfast nirvana.
+    </div>
+    
+    <button onclick="revealWisdom()">Get Blessed By the Oats</button>
+    
+    <div class="scripture" id="wisdom"></div>
+  </div>
+
+  <script>
+    function revealWisdom() {
+      const wisdoms = [
+        "The milk flows where the spoon goes!",
+        "An empty bowl is a sign from the gods... refill it quickly!",
+        "Oats today, enlightenment tomorrow!",
+        "Beware of soggy cereal, for it is unholy!",
+        "Crisp grains, crisp mind. That's the secret!"
+      ];
+      const randomWisdom = wisdoms[Math.floor(Math.random() * wisdoms.length)];
+      document.getElementById('wisdom').textContent = randomWisdom;
+    }
+  </script>
+
+</body>
+</html>
