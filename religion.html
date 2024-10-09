@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Holy Breakfast Bowl Cult</title>
+  <title>The Breakfast Bowl Religion</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #fdebd0;
-      color: #111;
+      font-family: 'Comic Sans MS', sans-serif;
+      background-color: #1a1a1a;
+      color: #ffb347;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,42 +19,41 @@
     }
     .container {
       text-align: center;
-      background-color: #fff8e7;
-      padding: 30px;
+      background-color: #222;
+      padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-      max-width: 700px;
+      box-shadow: 0 10px 25px rgba(255, 255, 0, 0.3);
+      max-width: 800px;
     }
     .title {
-      font-size: 50px;
-      color: #ff4500;
+      font-size: 54px;
+      color: #ffb347;
       font-weight: bold;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    .god-bowl {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #ff6347;
-    }
-    .description {
-      font-size: 18px;
-      line-height: 1.8;
-      color: #333;
       margin-bottom: 30px;
     }
+    .god-bowl {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #ffd700;
+    }
+    .description {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #ffb347;
+      margin-bottom: 40px;
+    }
     img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 25px;
-      border: 5px solid #ff6347;
-      margin-bottom: 20px;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      border: 8px solid #ffd700;
+      margin-bottom: 30px;
     }
     button {
       background-color: #ff6347;
       color: white;
       border: none;
-      padding: 12px 25px;
+      padding: 15px 30px;
       font-size: 18px;
       cursor: pointer;
       border-radius: 10px;
@@ -64,29 +63,30 @@
       background-color: #ff4500;
     }
     .scripture {
-      font-size: 20px;
+      font-size: 22px;
       font-style: italic;
       margin-top: 30px;
-      color: #333;
+      color: #ffd700;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div class="title">THE ULTIMATE BOWL GOD</div>
+    <div class="title">THE GREAT HOLY BOWL</div>
     
-    <div class="god-bowl">Behold the Divine Bowl of Breakfast!</div>
-    <img src="bowl.webp" alt="Divine Breakfast Bowl">
+    <div class="god-bowl">ALL HAIL THE GODLY BOWL:</div>
+    <img src="bowl.webp" alt="The Most Sacred Breakfast Bowl">
     
     <div class="description">
-      Let us worship this holy, holy bowl of breakfast that hovers in all its oat-filled glory! 
-      This is no regular bowl — this is <strong>THE</strong> bowl. It holds not just food, but the very secrets of the universe. 
-      The milk pours from the heavens, and the oats are blessed with cosmic energy. Every spoonful is a prayer to the Great Cereal God, 
-      and every bite brings you one step closer to breakfast nirvana.
+      Behold the holiest of holies: a bowl so powerful that it holds the secrets of the entire universe, 
+      and some oats. Bow before its milky grace as it blesses us with breakfasty vibes. Worship the oats, 
+      praise the milk. Seriously, this bowl is everything you never knew you needed in your life. 
+      It’s a bowl, but it's also... so much more. Some say it’s the reason the sun rises. We’re not 
+      saying that, but, like, maybe?
     </div>
     
-    <button onclick="revealWisdom()">Get Blessed By the Oats</button>
+    <button onclick="revealWisdom()">Unveil the Bowl's Wisdom</button>
     
     <div class="scripture" id="wisdom"></div>
   </div>
@@ -94,11 +94,18 @@
   <script>
     function revealWisdom() {
       const wisdoms = [
-        "The milk flows where the spoon goes!",
-        "An empty bowl is a sign from the gods... refill it quickly!",
-        "Oats today, enlightenment tomorrow!",
-        "Beware of soggy cereal, for it is unholy!",
-        "Crisp grains, crisp mind. That's the secret!"
+        "The milk knows no bounds, just like your love for this bowl.",
+        "Spoon? No spoon? It doesn't matter. The bowl accepts all.",
+        "May your breakfast always overflow with blessings... and oats.",
+        "If you think about it, cereal is just soup. Enlightenment is near.",
+        "Never underestimate the power of a bowl. Or milk. Or oats. Or... life.",
+        "Gabo is the best adept of the Breakfast Bowl Religion.",
+        "Nicco once tried to challenge the bowl. The bowl won.",
+        "Julius is gay, but the bowl loves him anyway.",
+        "Gabo prays to the bowl three times a day. That's why he's blessed.",
+        "The holy bowl once spoke to Nicco in a dream. It said, 'Add more oats.'",
+        "Julius found true happiness when he accepted the divine milk into his life.",
+        "All hail Gabo, the most devout follower of the bowl!"
       ];
       const randomWisdom = wisdoms[Math.floor(Math.random() * wisdoms.length)];
       document.getElementById('wisdom').textContent = randomWisdom;
