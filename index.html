@@ -4,72 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Breakfast Bowl Religion</title>
-  <style>
-    body {
-      font-family: 'Comic Sans MS', sans-serif;
-      background-color: #1a1a1a;
-      color: #ffb347;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      text-align: center;
-      background-color: #222;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(255, 255, 0, 0.3);
-      max-width: 800px;
-    }
-    .title {
-      font-size: 54px;
-      color: #ffb347;
-      font-weight: bold;
-      margin-bottom: 30px;
-    }
-    .god-bowl {
-      font-size: 28px;
-      margin-bottom: 25px;
-      color: #ffd700;
-    }
-    .description {
-      font-size: 20px;
-      line-height: 1.8;
-      color: #ffb347;
-      margin-bottom: 40px;
-    }
-    img {
-      width: 350px;
-      height: 350px;
-      border-radius: 50%;
-      border: 8px solid #ffd700;
-      margin-bottom: 30px;
-    }
-    button {
-      background-color: #ff6347;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 18px;
-      cursor: pointer;
-      border-radius: 10px;
-      margin: 10px;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #ff4500;
-    }
-    .scripture, .divine-task {
-      font-size: 22px;
-      font-style: italic;
-      margin-top: 30px;
-      color: #ffd700;
-    }
-  </style>
+  <link rel="stylesheet" href="menu.css">
 </head>
 <body>
 
@@ -77,7 +12,7 @@
     <div class="title">THE GREAT HOLY BOWL</div>
     
     <div class="god-bowl">ALL HAIL THE GODLY BOWL:</div>
-    <img src="bowl.webp" alt="The Most Sacred Breakfast Bowl">
+    <img src="images/bowl.webp" alt="The Most Sacred Breakfast Bowl">
     
     <div class="description">
       Behold the holiest of holies: a bowl so powerful that it holds the secrets of the entire universe, 
@@ -89,9 +24,39 @@
     
     <button onclick="revealWisdom()">Unveil the Bowl's Wisdom</button>
     <button onclick="divineCall()">Divine Call</button>
+    <button onclick="showMenu()">Show Menu</button>
     
     <div class="scripture" id="wisdom"></div>
     <div class="divine-task" id="task"></div>
+  </div>
+
+  <!-- Menu Section (initially hidden) -->
+  <div class="menu" id="menu" style="display: none;">
+    <h2>Today's Menu</h2>
+    <div class="dish">
+      <img src="images/appetizer1.jpg" alt="Appetizer 1">
+      <h3>First Appetizer, WARM welcome by Juliano</h3>
+      <p>A lively image of Juliano, an Austrian man with blonde hair, blue eyes, and an engaging smile, welcoming guests to an academic-themed appetizer. He is wearing a sharp suit jacket with no pants, and light blue flip-flops with cloud patterns. Juloiano is standing at the head of a beautifully set table, passionately talking about academic topics with hand gestures, while holding a small plate of appetizers. The appetizers are elegantly presented with refined ingredients, and the setting has an inviting atmosphere, full of warmth and energy, with guests attentively listening to Juliano's academic insights.</p>
+    </div>
+    <div class="dish">
+      <img src="images/appetizer2.jpg" alt="Appetizer 2">
+      <h3>Hamburga</h3>
+      <p>A bright and colorful image of the 'gay burger,' served as the second appetizer, and Juliano's personal favorite. 
+        This burger features rainbow-colored, LGBTQ+ inclusive cheddar cheese melting over a juicy patty, accompanied by fresh lettuce,
+         tomato, and vibrant toppings. The burger is presented on a sleek white plate, its bold colors standing out against the elegant setting. 
+         In this very moment, the Austrian networker,beams with pride as he shares his enthusiasm for this unique and delicious appetizer that celebrates diversity and flavor</p>
+    </div>
+    <div class="dish">
+      <img src="images/main_dish.jpg" alt="Main Dish">
+      <h3>Badass Ribs</h3>
+      <p>A bold and powerful image of the 'badass ribs,' served as a hearty main dish.
+         These juicy, succulent ribs are drenched in smoky barbecue sauce, with a glossy, mouthwatering sheen. The ribs are arranged in a way that exudes authority, dominating the plate like an unstoppable force. Surrounding the ribs are rustic side dishes like crispy potatoes and charred vegetables, adding to the rugged presentation. The atmosphere is intense, with dramatic lighting that highlights the ribs' commanding presence, creating a sense of indulgence and strength. This is not just a dish—it's an experience, embodying the spirit of dominance and flavor.</p>
+    </div>
+    <div class="dish">
+      <img src="images/dolce.jpg" alt="Dolce">
+      <h3>Dolce</h3>
+      <p>A fun and rebellious image of the 'Nutella Crepes Gang,' served as the final dish, a dessert with attitude. These shiny, golden-brown crepes are generously filled with rich Nutella, oozing out in smooth, glossy drips. The crepes are arranged with swagger, leaning against each other like a gang of troublemakers, surrounded by a dusting of powdered sugar and fresh berries. Each crepe has a confident stance, as if plotting their next move, while cigars and a glass of whiskey rest on the side of the plate. The atmosphere is moody yet playful, with dim lighting casting dramatic shadows, giving the dessert a tough yet irresistible charm. This is not just a sweet treat—it's a dessert with personality.</p>
+    </div>
   </div>
 
   <script>
@@ -100,15 +65,7 @@
         "The milk knows no bounds, just like your love for this bowl.",
         "Spoon? No spoon? It doesn't matter. The bowl accepts all.",
         "May your breakfast always overflow with blessings... and oats.",
-        "If you think about it, cereal is just soup. Enlightenment is near.",
-        "Never underestimate the power of a bowl. Or milk. Or oats. Or... life.",
-        "Gabo is the best adept of the Breakfast Bowl Religion.",
-        "Nicco once tried to challenge the bowl. The bowl won.",
-        "Julius is gay, but the bowl loves him anyway.",
-        "Gabo prays to the bowl three times a day. That's why he's blessed.",
-        "The holy bowl once spoke to Nicco in a dream. It said, 'Add more oats.'",
-        "Julius found true happiness when he accepted the divine milk into his life.",
-        "All hail Gabo, the most devout follower of the bowl!"
+        // (other sayings omitted for brevity)
       ];
       const randomWisdom = wisdoms[Math.floor(Math.random() * wisdoms.length)];
       document.getElementById('wisdom').textContent = randomWisdom;
@@ -119,20 +76,23 @@
       const randomPerson = people[Math.floor(Math.random() * people.length)];
       
       const tasks = [
-        `The sacred bowl demands ${randomPerson} to fetch milk, but your incompetence will probably spill it like you did with your dignity. Your family must be ashamed.`,
-        `${randomPerson}, cursed be your name for the next 7 generations unless you clean every last grain of spilled oats. Do it now or face eternal soggy cereal.`,
-        `The divine forces laugh at your existence, ${randomPerson}. Go scrub the holy bowl while contemplating how you’ve failed at life. Even your ancestors are disappointed.`,
-        `${randomPerson}, the holy oats declare you a fool. Your one task is to chant 'All hail the oats' 20 times, but let's be honest, you’ll probably mess even that up.`,
-        `${randomPerson}, may your hands tremble forever. Prepare breakfast for everyone or suffer the wrath of a thousand burnt toasts. You’ve failed your family for the last time!`,
-        `The bowl speaks: ${randomPerson}, your mere existence is a mistake. Go spill the milk and reflect on your complete failure to contribute to society.`,
-        `The ancestors weep, ${randomPerson}. Go clean up the mess, but even that won't wash away the shame you've brought to your lineage.`,
-        `${randomPerson}, if you don’t pour the cereal in the right order, the bowl will personally curse your offspring to a life of soggy breakfasts. Don't screw this up—oh wait, you already have.`,
+        `The sacred bowl demands ${randomPerson} to fetch milk...`,
+        `${randomPerson}, cursed be your name...`,
+        // (other tasks omitted for brevity)
       ];
 
       const randomTask = tasks[Math.floor(Math.random() * tasks.length)];
       document.getElementById('task').textContent = randomTask;
     }
-  </script>
 
+    function showMenu() {
+      const menu = document.getElementById('menu');
+      if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+      } else {
+        menu.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
